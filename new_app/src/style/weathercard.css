@@ -1,0 +1,100 @@
+.city-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+    width: 250px;
+    background-color: #f2f2f2;
+}
+
+.details-card {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+    width: 300px;
+    background-color: lightblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.detailsheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.temperature {
+    display: inline-block;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    background: linear-gradient(to bottom, #f6b73c, #f16f3c);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 6px 12px;
+    transition: transform 0.2s ease-in-out;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.temperature:hover {
+    transform: scale(1.1);
+}
+
+.cityName {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    background-color: #333;
+    padding: 6px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    max-width: 100px;
+}
+
+.lowTemp {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.highTemp {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans', sans-serif;
+}
