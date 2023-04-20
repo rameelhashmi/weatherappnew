@@ -1,6 +1,8 @@
 import React from 'react';
 import CityWeatherCard from './CityWeatherCard';
 import DefaultCityCard from './DefaultCityCard';
+import store from '../reduxContainer/store';
+import { Provider } from 'react-redux';
 
 interface AppProps {
     initialData: { appName: string };
@@ -8,6 +10,7 @@ interface AppProps {
 
 function App({ initialData }: AppProps) {
     return (
+        <Provider store={store}>
         <div>
             <h1>{initialData.appName}</h1>
             <div>
@@ -18,6 +21,8 @@ function App({ initialData }: AppProps) {
                 <DefaultCityCard cityName="Munich" />
             </div>
         </div>
+        </Provider>
+
     );
 }
 
