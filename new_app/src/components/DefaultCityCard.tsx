@@ -39,7 +39,7 @@ function DefaultCityCard({ cityName }: DefaultCityCardProps) {
     }, []);
 
     const handleClick = () => {
-        setShowDetails(true);
+        setShowDetails(prevState => !prevState);
     };
 
     const timeConversion = (time: number) => {

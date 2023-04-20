@@ -29,7 +29,7 @@ function CityWeatherCard(): JSX.Element {
     };
 
     const handleClick = (): void => {
-        setShowDetails(true);
+        setShowDetails(prevState => !prevState);
     };
 
     const timeConversion = (time: number): string => {
