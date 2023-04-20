@@ -7,7 +7,7 @@ interface CityFormProps {
 
 function CityForm(props: CityFormProps) {
     const [city, setCity] = useState<string>('');
-    const API_KEY = '8250f6a9215c6e9a9dc355653323e762';
+    const API_KEY = 'c3d0d15a5dd30e3f9e694468f8dfaf03';
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();

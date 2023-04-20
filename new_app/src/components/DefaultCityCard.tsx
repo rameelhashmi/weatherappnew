@@ -1,31 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Divider from '@mui/material/Divider';
-
-interface WeatherData {
-    name: string;
-    main: {
-        temp: number;
-        temp_min: number;
-        temp_max: number;
-        feels_like: number;
-        humidity: number;
-    };
-    sys: {
-        country: string;
-        sunrise: number;
-        sunset: number;
-    };
-}
-
-interface DefaultCityCardProps {
-    cityName: string;
-}
+import { WeatherData, DefaultCityCardProps } from '../reduxContainer/DataType';
 
 function DefaultCityCard({ cityName }: DefaultCityCardProps) {
     const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
     const [showDetails, setShowDetails] = useState<boolean>(false);
 
-    const API_KEY = '8250f6a9215c6e9a9dc355653323e762';
+    const API_KEY = 'c3d0d15a5dd30e3f9e694468f8dfaf03';
     const handleSubmit = async () => {
         const response = await fetch(
             `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`

@@ -2,22 +2,8 @@ import React, { useState } from 'react';
 import CityForm from '../components/CityForm';
 import '../style/weathercard.css';
 import Divider from "@mui/material/Divider";
+import { WeatherData, DefaultCityCardProps } from '../reduxContainer/DataType';
 
-interface WeatherData {
-    name: string;
-    main: {
-        temp: number;
-        temp_min: number;
-        temp_max: number;
-        feels_like: number;
-        humidity: number;
-    };
-    sys: {
-        country: string;
-        sunrise: number;
-        sunset: number;
-    };
-}
 
 function CityWeatherCard(): JSX.Element {
     const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
