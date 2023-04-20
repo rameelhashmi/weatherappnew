@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CityForm from '../components/CityForm';
 import '../style/weathercard.css';
 import Divider from "@mui/material/Divider";
-import { WeatherData, DefaultCityCardProps } from '../reduxContainer/DataType';
+import { WeatherData } from '../reduxContainer/DataType';
 
 
 function CityWeatherCard(): JSX.Element {
